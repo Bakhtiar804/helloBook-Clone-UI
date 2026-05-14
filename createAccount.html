@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - HelloBook</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:#eef2f7;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* MAIN CONTAINER */
+
+        .container{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:30px;
+        }
+
+        /* SIGNUP BOX */
+
+        .signup-box{
+            width:430px;
+            background:white;
+            border-radius:18px;
+            padding:30px;
+            box-shadow:0 10px 35px rgba(0,0,0,0.08);
+        }
+
+        .logo{
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        .logo h1{
+            color:#0a66ff;
+            font-size:55px;
+            font-weight:700;
+            letter-spacing:-2px;
+        }
+
+        .signup-box h2{
+            text-align:center;
+            color:#222;
+            margin-bottom:5px;
+            font-size:30px;
+        }
+
+        .signup-box p{
+            text-align:center;
+            color:#666;
+            margin-bottom:25px;
+            font-size:15px;
+        }
+
+        /* INPUTS */
+
+        .signup-box input{
+            width:100%;
+            padding:15px;
+            margin-bottom:15px;
+            border:1px solid #dcdfe6;
+            border-radius:10px;
+            font-size:16px;
+            transition:0.3s;
+        }
+
+        .signup-box input:focus{
+            border-color:#0a66ff;
+            box-shadow:0 0 8px rgba(10,102,255,0.25);
+            outline:none;
+        }
+
+        /* NAME FIELDS */
+
+        .row{
+            display:flex;
+            gap:10px;
+        }
+
+        /* BUTTON */
+
+        #signup-btn{
+            background:linear-gradient(135deg,#42b72a,#2ca01c);
+            color:white;
+            border:none;
+            font-size:18px;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        #signup-btn:hover{
+            transform:translateY(-2px);
+            background:linear-gradient(135deg,#36a420,#248b17);
+        }
+
+        /* LOGIN LINK */
+
+        .login-link{
+            text-align:center;
+            margin-top:15px;
+        }
+
+        .login-link a{
+            text-decoration:none;
+            color:#1877f2;
+            font-weight:500;
+        }
+
+        .login-link a:hover{
+            text-decoration:underline;
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        #signup-btn{
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="signup-box">
+
+            <div class="logo">
+                <h1>HelloBook</h1>
+            </div>
+
+            <h2>Create Account</h2>
+
+            <p>It's quick and easy.</p>
+
+            <form>
+
+                <div class="row">
+
+                    <input type="text"
+                    placeholder="First Name"
+                    required id="firstName">
+
+                    <input type="text"
+                    placeholder="Last Name"
+                    required id="lastName">
+
+                </div>
+
+                <input type="email"
+                placeholder="Email address"
+                required id="email">
+
+                <input type="password"
+                placeholder="New Password"
+                required id="newPass">
+
+                <input type="password"
+                placeholder="Confirm Password"
+                required id="confirmPass">
+
+                <input type="date" id="date" required>
+
+                <div class="btn">   
+                                 <button type="submit"
+                value="Create Account"
+                id="signup-btn" onclick="craeteNewAcc()" >Create Account </button>
+            </div>
+
+
+            </form>
+
+            <div class="login-link">
+                <a href="index.html">Already have an account?</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
