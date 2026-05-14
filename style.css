@@ -1,108 +1,72 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     background: #eef2f7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* HEADER */
 
-.header {
+.header{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
-.header h1 {
+.header h1{
     color: #0a66ff;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 700;
     letter-spacing: -2px;
 }
 
-.header p {
+.header p{
     color: #444;
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 10px;
-    line-height: 35px;
+    line-height: 30px;
 }
 
-/* LOGIN BOX */
+/* BOX */
 
-.main {
-    width: 390px;
-    background: white;
+.main{
+    width: 420px;
+    background: #fff;
     margin: 35px auto;
-    padding: 30px 25px;
-    border-radius: 16px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
-    text-align: center;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 /* INPUTS */
 
-.main input {
+.main input{
     width: 100%;
-    padding: 15px;
-    margin-bottom: 16px;
+    padding: 14px;
+    margin-bottom: 14px;
     border: 1px solid #dcdfe6;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 15px;
+    outline: none;
     transition: 0.3s;
 }
 
-.main input:focus {
+.main input:focus{
     border-color: #0a66ff;
-    box-shadow: 0 0 8px rgba(10, 102, 255, 0.25);
-    outline: none;
+    box-shadow: 0 0 6px rgba(10,102,255,0.25);
 }
 
 /* LOGIN BUTTON */
 
-#color {
-    background: linear-gradient(135deg, #1877f2, #0a66ff);
+#color{
+    width: 100%;
+    background: linear-gradient(135deg,#1877f2,#0a66ff);
     color: white;
     border: none;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#color:hover {
-    transform: translateY(-2px);
-    background: linear-gradient(135deg, #0f5ed7, #004ecc);
-}
-
-/* FORGOT PASSWORD */
-
-.main a {
-    text-decoration: none;
-    color: #1877f2;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.main a:hover {
-    text-decoration: underline;
-}
-
-hr {
-    margin: 22px 0;
-    border: none;
-    border-top: 1px solid #e4e6eb;
-}
-
-/* CREATE ACCOUNT BUTTON */
-
-#color-green {
-    background: linear-gradient(135deg, #42b72a, #2ca01c);
-    color: white;
-    border: none;
-    padding: 14px 18px;
+    padding: 14px;
     border-radius: 10px;
     font-size: 17px;
     font-weight: 600;
@@ -110,27 +74,69 @@ hr {
     transition: 0.3s;
 }
 
-#color-green:hover {
+#color:hover{
     transform: translateY(-2px);
-    background: linear-gradient(135deg, #36a420, #248b17);
+    background: linear-gradient(135deg,#0f5ed7,#004ecc);
+}
+
+/* LINKS */
+
+.main a{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main a:hover{
+    text-decoration: underline;
+}
+
+/* LINE */
+
+hr{
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #e4e6eb;
+}
+
+/* CREATE ACCOUNT BUTTON */
+
+#color-green{
+    width: 100%;
+    background: linear-gradient(135deg,#42b72a,#2ca01c);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#color-green:hover{
+    transform: translateY(-2px);
+    background: linear-gradient(135deg,#36a420,#248b17);
 }
 
 /* FOOTER */
 
-.footer {
+.footer{
     text-align: center;
-    margin-top: 22px;
+    margin-top: 20px;
 }
 
-.footer a {
-    text-decoration: none;
+.footer a{
     color: #1c1e21;
+    text-decoration: none;
     font-weight: 600;
-    font-size: 15px;
 }
 
-.footer p {
-    margin-top: 6px;
+.footer p{
+    margin-top: 5px;
     color: #65676b;
-    font-size: 14px;
+    font-size: 13px;
 }
